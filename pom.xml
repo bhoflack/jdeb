@@ -18,6 +18,21 @@
       areas as well.
     </description>
     <url>http://vafer.org/projects/jdeb</url>
+	
+        <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Internal Releases</name>
+            <url>http://nexus.colo.elex.be:8081/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Internal Snapshots</name>
+            <url>http://nexus.colo.elex.be:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
     <developers>
         <developer>
             <id>tcurdt</id>
@@ -135,10 +150,4 @@
         </dependency>
     </dependencies>
 
-   <distributionManagement>
-        <site>
-            <id>website</id>
-            <url>scpexe://vafer.org/var/www/vafer.org/www/projects/jdeb</url>
-        </site>
-    </distributionManagement>
 </project>
